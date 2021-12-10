@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:paddingTop="120dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/covid"
+        android:textSize="32sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:lottie_fileName="doctor.json">
+    </com.airbnb.lottie.LottieAnimationView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:paddingBottom="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="7674-progress-bar.json"
+        app:lottie_autoPlay="true"
+        app:lottie_speed="0.5"
+        ></com.airbnb.lottie.LottieAnimationView>
+
+</RelativeLayout>
